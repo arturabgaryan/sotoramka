@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="dm-modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Соторамы</title>
+    <link rel="icon" sizes="192x192" href="/static/imgs/LOGO.jpg">
+    <style>
+@media screen and (min-device-width: 1024px){
+body {
+  font-family: 'Montserrat';
+  font-weight:600;
+  min-width:1024px;
+  background-color:white;
+  overflow-x: hidden;
+}
+.desktopMenu {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 60px;
+  overflow: hidden;
+  background-color: #f2cb1d;
+  position: fixed;
+  top: 0;
+  width:100%;
+  min-width:1200px;
+  font-size:27px;
+  z-index:999;
+
+}
+.phoneMenu{
+display:none;
+}
+
+a {
+  color: white !important;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 23px 20px;
+  text-decoration: none;
+  margin-top:15px;
+
+}
+
+
+li .active {
+  float: left;
+}
+.logoimg{
+width: 50px;
+height: 50px;
+}
+.flag{
+width: 82px;
+height: 42px;
+margin-top:5px;
+margin-right:-40px;
+margin-left:-15px;
+}
+.flag2{
+width: 54px;
+height: 54px;
+}
+
+.videodiv{
+width:1024px;
+margin:auto;
+display:flex;
+}
+.text1{
+font-size:19px;
+line-height: 2;
+margin-top:30px;
+margin-bottom:30px;
+text-align:left;
+padding-left:70px;
+font-weight:200;
+}
+.text2{
+font-size:22px;
+line-height: 4;
+margin-top:20px;
+margin-bottom:30px;
+text-align:left;
+padding-left:50px;
+font-weight:200;
+}
+.seconddiv{
+display:flex;
+width:1024px;
+margin:auto;
+}
+footer{
+background-color:#e0d6bc;
+text-align:center;
+padding: 15px 0px;
+font-size:18px
+}
+.head1{
+padding-left:50px;margin-bottom:20px; margin-top:25px; font-weight:800;font-size:20px;
+}
+.head{
+text-align:center; font-size:40px; padding-top:170px;font-weight: bolder;
+}
+.text3{
+font-size:20px;
+width:1024px;
+}
+.dash{
+text-align:center; font-size:40px; padding-bottom:80px;font-weight: bolder;color:#f2cb1d;
+}
+.mobileCarousel{
+display:none;
+}
+.thirddiv{
+width:1024px;
+margin:auto;
+padding-top:70px;
+font-size:20px;
+display:flex;
+}
+.poddiv1{
+margin-left:50px;
+}
+.head2{
+padding-left:100px;margin-bottom:50px;
+}
+.fourthdiv{
+display:flex;
+width:850px;
+margin:auto;
+}
+.forVid{
+margin-left:50px;
+}
+
+.fifthDiv{
+display:flex;
+width:1024px;
+margin:auto;
+}
+.photo{
+margin-left:100px;
+width:350px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #fa9c37;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.text5{
+width:1024px;
+}
+.helpdiv{
+width:1024px;
+margin:auto;
+font-size:20px;
+}
+
+.VidDiv{
+width:1024px;
+margin:auto;
+}
+.sixthdiv{
+width:400px;
+margin:auto;
+}
+}
+
+
+@media screen and (max-device-width: 1024px){
+html,body {
+  font-family: 'Montserrat';
+  font-weight:400;
+  overflow-x: hidden;
+  width: 100%;
+
+  }
+
+.desktopMenu{
+display:none;
+}
+.logoimg{
+width: 40px;
+height: 40px;
+}
+.text1{
+font-size:19px;
+line-height: 2;
+margin-top:30px;
+margin-bottom:30px;
+text-align:left;
+padding-left:70px;
+font-weight:200;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -10px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #f2cb1d;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  text-align:center;
+
+  padding: 20px;
+  padding-top: 125px;
+
+  background:#f2cb1d;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.active2{
+padding:20px;
+}
+.video{
+width:100%!important;
+}
+.head1{
+font-size:19px;
+text-align:center;
+font-weight:800;
+}
+.head{
+text-align:center;
+font-weight:bold;
+font-size:30px;
+padding-top:170px;
+}
+.text3{
+padding:0px 10px!important;
+width:100%!important;
+font-size:18px!important;
+text-align:center;
+font-weight:400;
+}
+.dash{
+text-align:center; font-size:40px; padding-bottom:30px;font-weight: bolder;color:#f2cb1d;
+}
+.desktopCarousel{
+display:none;
+}
+.text4{
+font-size:20px;
+font-weight:bold;
+text-align:center;
+}
+.text5{
+padding:0px 10px!important;
+margin-top:15px;
+text-align:center;
+font-size:18px!important;
+}
+.head2{
+text-align:center;
+}
+.forVid{
+width:99%!important;
+margin:auto!important;
+}
+.forVid2{
+width:99%!important;
+margin:auto!important;
+}
+.forVid3{
+width:99%!important;
+margin:auto!important;
+}
+.photo{
+width:372px;
+margin-bottom:30px;
+}
+.photodiv{
+width:372px;
+margin:auto;
+}
+
+footer{
+background-color:#e0d6bc;
+text-align:center;
+padding: 15px 0px;
+font-size:18px
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #fa9c37;
+  color: white;
+  cursor: pointer;
+  padding: 17px 19px;
+  border-radius: 25px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+}
+
+    </style>
+</head>
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+&#9650;</button>
+<ul class="desktopMenu">
+  <li><a style="padding: 20px 30px;" class="active" href="#firstdiv" ><img class='logoimg' src="/static/imgs/LOGO.png" ></a></li>
+    <li><a style="margin-left:60px;" class="active" href="/main" ><img class='flag' src="/static/imgs/rus.png" ></a></li>
+    <li><a class="active" href="/eng" ><img class='flag2' src="/static/imgs/eng.png" ></a></li>
+    <li><a href="#third" style="float: right;">Pricing</a></li>
+    <li><a href="#second" style="float: right;">Production</a></li>
+    <li><a href="#videodiv" class="active1" style="float: right;">Home</a></li>
+</ul>
+
+<div class="phoneMenu">
+    <nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="#videodiv" style="color:black!important"><li>Home</li></a>
+      <a href="#third" style="color:black!important"><li>Pricing</li></a>
+      <a href="#second" style="color:black!important"><li>Production</li></a>
+      <a href="/main" style="color:black!important"><li><b>Русский</b></li></a>
+        <a href="/eng" style="color:black!important"><li><b>English</b></li></a>
+    </ul>
+  </div>
+        <a class="active2" href="#firstdiv" style="float:right" ><img class='logoimg' src="/static/imgs/LOGO.png" ></a>
+</nav>
+</div>
+<h1 id="videodiv" class="head">HONEY FRAME PACKAGING</h1>
+<h1 class="dash">__________</h1>
+  <div  class="videodiv">
+     <div style="text-align:center;">
+       <iframe class="video" style='padding-top:30px;' width="460" height="285" src="https://www.youtube.com/embed/cRuOBOHvXFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+      <div>
+      <p class="head1" style="">Our team is engaged in the development and production of packaging for honeycombs</p>
+      <ul class="text1">
+       <li style="margin-bottom:20px;">435mm x 145mm - half comb frame</li>
+       <li style="margin-bottom:20px;">435mm x 230mm - langstroth frame</li>
+       <li style="margin-bottom:20px;">435mm x 300mm - dadant frame</li>
+     </ul>
+      </div>
+  </div>
+<br id="second">
+<h1 id="sd" class="head">PRODUCTION DETAILS</h1>
+<h1 class="dash">__________</h1>
+<div class="helpdiv">
+<div  class="seconddiv">
+    <div class="text3">
+        <p>The packaging is a cardboard box made of micro-cardboard of the original design, which allows you to fix the honeycomb frame in the middle of the box, so that it does not touch the walls of the box with a honey seal.</p>
+        <p>For convinience purposes, our packages are equipped with carrying a handle</p>
+        <p>On the sides of the box there are easily removable transparent panes. They are designed for preliminary demonstration of the honeycomb frame without opening the box</p>
+    </div>
+
+<div class="desktopCarousel">
+     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width:500px;margin-left:40px;" data-interval="2500">
+  <div class="carousel-inner" style="padding-right:20px;">
+    <div class="carousel-item active">
+      <img  src="/static/imgs/img1 (1).jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img  src="/static/imgs/img2 (1).jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img  src="/static/imgs/img4 (1).jpg" alt="Third slide">
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<div class="mobileCarousel">
+     <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" data-interval="2500" style="">
+  <div class="carousel-inner" >
+    <div class="carousel-item active">
+      <img style="margin-right:200px;"  src="/static/imgs/img1 (2).jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img style="margin-right:20px;"  src="/static/imgs/img2 (2).jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img style="margin-right:20px;"  src="/static/imgs/img4 (2).jpg" alt="Third slide">
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+        <p class="text5">The package is provided with a polypropylene film insert to protect the honeycomb frame from dust. It is suitable for contact with food products</p>
+</div>
+
+<div class="thirddiv">
+<div>
+    <p class="text4">The box-packaging is delivered in following sets:<br></p>
+    <ul class="text1">
+       <li style="margin-bottom:20px;">50 items per set - half comb frame</li>
+       <li style="margin-bottom:20px;">40 items per set - langstroth frame</li>
+       <li style="margin-bottom:20px;">25 items per set - dadant frame</li>
+     </ul>
+</div>
+    <div class="poddiv1" >
+        <p class="text4" >Shipping is performed by Transport Companies</p>
+        <p class="text4" >The package is delivered at the expense of the customer</p>
+        <p class="text4" >Shipping from Yekaterinburg, Russia</p>
+    </div>
+</div>
+<div class="VidDiv" style="padding-top:50px;">
+    <h2 class="head2">Box assembly scheme:</h2>
+    <div class="fourthdiv">
+        <video class="forVid2" style="outline: none;" width="400" height="300"  controls="true" preload="auto" >
+            <source src="/static/videos/QTCD0565.MP4">
+        </video>
+        <video class="forVid" style="outline: none;" width="400" height="300" controls preload="true" >
+            <source src="/static/videos/SFNS2056.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="sixthdiv">
+        <video class="forVid3" style="outline: none;" width="400" height="300" preload="metadata" controls >
+            <source src="/static/videos/VTDQ4602.MP4" type="video/mp4">
+        </video>
+    </div>
+</div>
+</div>
+<br id="third">
+<h1 id="th" class="head">PRICING</h1>
+<h1 class="dash">__________</h1>
+<div class="fifthDiv">
+       <div class="photodiv">
+            <img class="photo"  height="500px" src="/static/imgs/patent.jpg">
+       </div>
+      <ul class="text2">
+       <li style="margin-bottom:20px;">Half comb frame - 50 items Х 80₽ = 4000₽</li>
+       <li style="margin-bottom:20px;">Langstroth frame - 40 items Х 100₽ = 4000₽</li>
+       <li style="margin-bottom:20px;">Dadant frame - 25 items Х 120₽ = 3000₽</li>
+       <li style="margin-bottom:20px;">Set of 5 half comb frames - 10 items Х 60₽ = 600₽</li>
+     </ul>
+</div>
+<footer>
+    <p>LLC  &#171; Apiary &#187;</p>
+    <p>15 Entuziastov st, YEKATERINBURG 620017</p>
+    <p>tel/fax : (343) 228-56-76</p>
+    <p>tel: +7(908)921-99-81</p>
+    <p>paseka@urmail.ru</p>
+</footer>
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+    var ua = navigator.userAgent.toLowerCase();
+  if (ua.indexOf('safari') != -1) {
+    if (ua.indexOf('chrome') > -1) {
+    }
+    else {
+          // Check if video tag exists
+      if (jQuery(document).find('.hero-slideshow .hero-media-wrap video').length > 0) {
+        if (window.location.href.indexOf('reload') == -1) {
+          window.location.replace(window.location.href + '?reload');
+        }
+      }
+    }
+  }
+</script>
+<script>
+    setTimeout(function (){
+    $('.hero-slideshow .slides .hero-mp4 video').once().each(function(){
+      $(this).parent('.hero-mp4').show();
+      $(this).get(0).play();
+    });
+  }, 2000);
+</script>
+</body>
+</html>
